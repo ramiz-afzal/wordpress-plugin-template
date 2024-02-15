@@ -9,18 +9,9 @@ final class Init
     public static function get_services()
     {
         return array(
-            Base\Enqueue::class,
-            Base\Functions::class,
-            Base\Variable::class,
-            Core\CustomFields::class,
-            Core\WordPressHooks::class,
-            Core\WoocommerceFilters::class,
             Core\Shortcode::class,
             Core\AjaxHandler::class,
-            Core\BlackHawkHandler::class,
-            Core\ScheduledActionsHandler::class,
-            Core\CustomAdminColumns::class,
-            Core\CustomMetaboxes::class,
+            Core\WordPressHooks::class,
             Admin\AdminPages::class,
         );
     }
