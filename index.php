@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin Name:       PLugin Name
+ * Plugin Name:       Plugin Name
  * Plugin URI:        mailto:m.ramiz.afzal@gmail.com
- * Description:       PLugin Description
+ * Description:       Plugin Description
  * Version:           1.0.0
  * Requires at least: 6.1
  * Requires PHP:      7.4

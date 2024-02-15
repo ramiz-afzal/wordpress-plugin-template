@@ -2,7 +2,6 @@
 
 namespace PLUGIN_NAMESPACE\Admin;
 
-use PLUGIN_NAMESPACE\Base\Functions;
 use PLUGIN_NAMESPACE\Base\Variable;
 
 if (!defined('ABSPATH')) exit;
@@ -21,24 +20,7 @@ class AdminPages
     public static function get_admin_pages($object_context = null)
     {
         return array(
-            array(
-                'page_title'    => 'Overview',
-                'menu_title'    => 'Overview',
-                'capability'    => 'manage_options',
-                'menu_slug'     => 'tpg-overview',
-                'callback'      => [$object_context, 'render_admin_page'],
-                'icon_url'      => 'dashicons-chart-bar',
-                'position'      => 8,
-            ),
-            array(
-                'page_title'    => 'Site Totals',
-                'menu_title'    => 'Site Totals',
-                'capability'    => 'manage_options',
-                'menu_slug'     => 'tpg-site-totals',
-                'callback'      => [$object_context, 'render_admin_page'],
-                'icon_url'      => 'dashicons-calculator',
-                'position'      => 9,
-            ),
+            // defined admin pages here...
         );
     }
 
