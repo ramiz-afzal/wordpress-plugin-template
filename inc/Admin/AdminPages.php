@@ -2,7 +2,7 @@
 
 namespace PLUGIN_NAMESPACE\Admin;
 
-use PLUGIN_NAMESPACE\Base\Variable;
+use PLUGIN_NAMESPACE\Base\Functions;
 
 if (!defined('ABSPATH')) exit;
 
@@ -20,7 +20,23 @@ class AdminPages
     public static function get_admin_pages($object_context = null)
     {
         return array(
-            // defined admin pages here...
+            // array(
+            //     'page_title'    => 'Parent page title',
+            //     'menu_title'    => 'Parent page menu title',
+            //     'capability'    => 'manage_options',
+            //     'menu_slug'     => Constant::SLUG_ADMIN_MENU,
+            //     'callback'      => [$object_context, 'render_admin_page'],
+            //     'icon_url'      => null,
+            //     'position'      => 80,
+            // ),
+            // array(
+            //     'parent_slug'   => 'options-general.php',
+            //     'page_title'    => 'Sub-page title',
+            //     'menu_title'    => 'Sub-page menu title',
+            //     'capability'    => 'manage_options',
+            //     'menu_slug'     => Constant::SLUG_ADMIN_SUBMENU,
+            //     'callback'      => [$object_context, 'render_admin_page'],
+            // ),
         );
     }
 
@@ -36,8 +52,7 @@ class AdminPages
     {
         $current_view = AdminPages::get_current_view();
         if (!empty($current_view)) {
-
-            $template_path = Variable::GET('TEMPLATES') . "/admin/pages/{$current_view}.php";
+            $template_path = Functions::get_template_file("admin/pages/{$current_view}.php");
             if (file_exists($template_path)) {
                 require_once($template_path);
             }

@@ -12,6 +12,7 @@ final class Init
             Core\Shortcode::class,
             Core\AjaxHandler::class,
             Core\WordPressHooks::class,
+            Core\CustomPostTypes::class,
             Admin\AdminPages::class,
         );
     }
