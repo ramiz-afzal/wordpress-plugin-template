@@ -13,7 +13,6 @@ final class Init
             Core\AjaxHandler::class,
             Core\WordPressHooks::class,
             Core\CustomPostTypes::class,
-            Admin\AdminPages::class,
         );
     }
 
