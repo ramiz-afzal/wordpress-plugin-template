@@ -9,6 +9,7 @@ final class Init
     public static function get_services()
     {
         return array(
+            Base\Enqueue::class,
             Core\Shortcode::class,
             Core\AjaxHandler::class,
             Core\WordPressHooks::class,

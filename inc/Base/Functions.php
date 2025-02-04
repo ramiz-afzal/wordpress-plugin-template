@@ -87,7 +87,7 @@ class Functions
         $data = ob_get_clean();
 
         $timestamp = date('Y-m-d h:i:s A');
-        $log = "[{$timestamp}]: {$data}\n";
+        $log = "[{$timestamp}]: {$data}";
 
         $directory  = Variable::GET('PATH') . 'logs';
         $filepath   = self::debug_file_path();
