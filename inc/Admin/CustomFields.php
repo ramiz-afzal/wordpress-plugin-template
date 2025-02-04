@@ -44,8 +44,8 @@ class CustomFields
 
     public static function register_settings_page_custom_fields()
     {
-        Container::make('theme_options', __('ShopVox WP'))
-            ->set_page_menu_title('ShopVox')
+        Container::make('theme_options', __('Theme Options'))
+            ->set_page_menu_title('Theme Options')
             ->set_page_file(Constant::SLUG_ADMIN_MENU)
             ->set_icon('data:image/svg+xml;base64,' . base64_encode(file_get_contents(Variable::GET('PATH') . 'assets/img/menu-icon.svg')))
             ->set_page_menu_position(80)
